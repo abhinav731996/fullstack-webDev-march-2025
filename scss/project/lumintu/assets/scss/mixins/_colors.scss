@@ -1,0 +1,19 @@
+@mixin generateColors ($colors){
+    @each $key, $value in $colors{
+        .text-#{$key}{
+            color: $value
+        }
+        .bg-#{$key}{
+            background-color: $value;
+        }
+        .text-bg-#{$key}{
+            background-color: $value;
+            @if(is-dark($value)){
+                color: #fff;
+            }
+            @else{
+                color: $basecolor;
+            }
+        }
+    }
+}

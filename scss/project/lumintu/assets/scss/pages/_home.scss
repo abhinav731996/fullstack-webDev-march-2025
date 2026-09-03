@@ -1,0 +1,577 @@
+// ************ footer *************
+
+footer{
+    background-color: $primary;
+}
+.footer-top{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0 2rem 0;
+}
+footer h3{
+    color: white;
+    font-size:medium;
+}
+
+.footer-top{
+    display: flex;
+    position: relative;
+}
+// .logo{
+//     display: flex;
+//     position: relative;
+// }
+// .logo h2{
+//     position: absolute;
+//     color: white;
+//     top: 0;
+//     left: 2rem;
+// }
+
+
+.footer-top .footer-disc p{
+    color: $textcolor;
+}
+.footer-top .footer-disc a{
+    color: #eff1f8;
+}
+a{
+    text-decoration: none;
+    transition: .4s all;
+    color: $textcolor;
+}
+button{
+    height: 2rem;
+    width: 5.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+}
+.footer-bottom{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 1rem;
+    color: $textcolor;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.logo-icon {
+    // position: absolute;
+    display: flex;
+    top: 0;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 2rem;
+//   font-family: 'Poppins', sans-serif;\
+  font-weight: 600;
+}
+
+.logo-icon img{
+    width: 1rem;
+}
+
+.footer-company ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-help ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-work ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-disc{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+// ***************** header ******************
+header{
+    background-color: #eff1f8;
+}
+.header-panel .logo-text {
+  color: $secondary;
+  font-size: 2rem;
+//   font-family: 'Poppins', sans-serif;\
+  font-weight: 600;
+}
+
+.header-panel{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 1rem 0 1rem;
+    gap: 1rem;
+}
+.right-bar ul{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+}
+.blue{
+    color: $basecolor;
+}
+.header-panel button a{
+    color: #ffffff;
+}
+
+// ************ hero-section ************
+.hero-section{
+    background-color: #eff1f8;
+}
+.hero-panel{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 3rem 0 3rem 0;
+}
+.hero-panel button a{
+    color: #ffffff;
+}
+.hero-left .bottom-panel{
+    position: absolute;
+    bottom: 7rem;
+}
+.hero-contect{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+// ********** funfact section **********
+
+.funfact-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-around;
+    color: white;
+    height: 175px;
+    
+}
+.fun-fact{
+    background-color: $primary;
+}
+
+
+// ************** about-us *************
+
+.about-us{
+    padding: 5rem 0 3rem 0;
+}
+.top-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.left-wrapper{
+    display: flex;
+    gap: 1rem;
+    width: 520px;
+}
+.right-wrapper{
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+.image-two{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.right-wrapper p{
+    color: $textcolor;
+}
+.right-wrapper h4{
+    color: $primary;
+}
+.right-wrapper button a{
+    color: white;
+}
+.bottom-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0 3rem 0;
+}
+
+
+// ************** services **************
+.insurance-wrapper{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+
+}
+.insurance-wrapper .card{
+    display: flex;
+    height: 140px;
+    background-color: #eff1f8;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.insurance-wrapper .card .right-card{
+    align-content: center;
+    width: 300px;
+    height: 140px;
+}
+.insurance-wrapper .card p{
+    color: $textcolor;
+}
+
+.top-services{
+    display: flex;
+    flex-direction: column;
+}
+.top-services p{
+    color: $textcolor;
+}
+.service-top-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.services{
+    padding: 3rem 0 3rem 0;
+}
+
+
+// ************* why-us **************
+.why-us{
+    background-color: $primary;
+    color: #ffffff;
+    padding: 6rem 0 6rem 0;
+}
+.us-wrapper{
+    display: flex;
+}
+.card-us .card{
+    display: flex;
+    gap: 1rem;
+    height: 140px;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-us .card p{
+    color: $textcolor;
+}
+.right-us img{
+    width: 620px;
+    height: 550px;
+
+}
+
+
+// *********** pricing ***********
+.pricing{
+    padding: 6rem 0 6rem 0;
+}
+.pricing-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+}
+.top-pricing{
+    display: flex;
+    flex-direction: column;
+}
+.top-pricing p{
+    color: $textcolor;
+}
+.pricing-top-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.pricing-card{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    gap: 2rem;
+    background-color: #eff1f8;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.pricing-card p{
+    color: $textcolor;
+}
+.pricing-card ul{
+    padding: 0 0 0 2rem;
+}
+.pricing-card ul li{
+    color: $textcolor;
+}
+.pricing-btn{
+    display: flex;
+    justify-content: center;
+    
+}
+.pricing-btn button{
+    width: 9rem;
+    height: 3rem;
+}
+.pricing-btn button a{
+    color: #ffffff;
+}
+.change-color{
+    background-color: $primary;
+}
+.change-color h4{
+    color: #ffffff;
+}
+.change-color h3{
+    color: #ffffff;
+}
+.change-color h5{
+    color: #ffffff;
+}
+.change-color button{
+    background-color: #ffffff;
+}
+.change-color button a{
+    color: black;
+}
+
+
+// ************* how it work *************
+
+.how-work{
+    padding: 6rem 0 6rem 0;
+}
+
+.top-work-panel{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.top-work-panel hr{
+    width: 250px;
+    height: 0px;
+    color: #eff1f8;
+}
+.top-work-right p{
+    color: $textcolor;
+}
+.top-work-right{
+    width: 500px;
+}
+
+.bottom-work-panel{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+.bottom-work-panel hr{
+    width: 250px;
+    height: 0px;
+    color: #eff1f8;
+}
+.bottom-work-left{
+    margin-top: -2rem;
+}
+.bottom-work-right p{
+    color: $textcolor;
+}
+.bottom-work-right{
+    width: 500px;
+}
+.bottom-work-right button a{
+    color: #eff1f8;
+}
+.bottom-work-right button{
+    width: 6.5rem;
+    height: 2.5rem;
+
+}
+
+.one-work{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 2rem 0;
+}
+.one-work .one-left{
+    width: 500px;
+}
+.one-work .one-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 500px;
+    // padding: 2rem 0 0 0;
+}
+.one-work .one-right .consultation{
+    display: flex;
+    gap: 2rem;
+}
+.one-work .one-right .work-discription{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 4rem;
+}
+.one-work .one-right .work-discription ul::before {
+  list-style-image: url("/assets/images/how-it-work/corner-down-right.webp");
+}
+.one-work .one-right .work-discription ul p{
+    color: $textcolor;
+}
+.one-work .one-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 500px;
+    // padding: 2rem 0 0 0;
+}
+.one-work .one-left .consultation{
+    display: flex;
+    gap: 2rem;
+}
+.one-work .one-left .work-discription{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 4rem;
+}
+.one-work .one-left .work-discription ul::before {
+  list-style-image: url("/assets/images/how-it-work/corner-down-right.webp");
+}
+.one-work .one-left .work-discription ul p{
+    color: $textcolor;
+}
+// ************ testimonials ************
+
+.testimonials{
+    background-color: #eff1f8;
+    padding: 6rem 0 6rem 0;
+}
+.top-testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+.testimonials-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.top-testimonials p{
+    color: $textcolor;
+}
+.pricing-top-testimonials{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonials-card{
+    display: flex;
+    justify-content: space-between;
+}
+.testimonials-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border-radius: 1rem;
+    gap: 2rem;
+    color: $textcolor;
+    background-color: #ffffff;
+    padding: 2.5rem;
+}
+
+
+// ************* get-started ****************
+
+.get-started{
+    padding: 6rem 0 6rem 0;   
+}
+.started-wrapper{
+    display: flex;
+    justify-content: space-between;
+
+}
+.left-start{
+    width: 350px;
+}
+.top-left-start{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.bottom-card{
+    display: flex;
+    gap: 1rem;
+
+}
+.bottom-card p{
+    color: $textcolor;
+}
+.bottom-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.bottom-left-start{
+    padding: 1rem 0 1rem 0;
+}
+
+.right-start-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #eff1f8;
+    width: 400px;
+    gap: .5rem;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.right-start-card form input{
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.right-start-card .last-msg{
+    border: none;
+    outline: none;
+    display: flex;
+    height: 150px;
+    width: 300px;
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+.right-start-card button{
+    width: 9rem;
+    height: 3rem;
+}
+.right-start-card button a{
+    color: white;
+}
