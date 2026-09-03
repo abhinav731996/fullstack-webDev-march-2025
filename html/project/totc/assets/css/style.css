@@ -1,0 +1,190 @@
+/* @font-face {
+    font-family: 'Poppins-regular';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins-medium';
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: 'Poppins-semibold';
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Poppins-bold';
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: 'Poppins-xbold';
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+} */
+
+:root{
+
+    /* Theme Colors */
+    --primary-color: #49BBBD;
+    --primary-light: #8db9ba;
+    --primary-accent-color: #fff;
+
+    --secondary-color: #252641;
+    --secondary-light: #353644;
+    --secondary-accent-color: #242B33;
+
+
+    --nutral-100: #00171F;
+    --nutral-80: #242B33;
+    --nutral-60: #667479;
+    --nutral-40: #99A2A5;
+    --nutral-20: #CCD1D2;
+    --nutral-10: #EBEEEF;
+    --nutral-0: #fdfdfd;
+    
+
+    /* Element Color */
+    --body-color: var(--nutral-80);
+    --body-bg: var(--nutral-0);
+    --heading-color: var(--primary-dark, #002A48);
+    --nav-link-color: var(--primary-dark, #002A48);
+
+    
+    /* Font family */
+    --font-family-medium: Poppins-medium, sans-serif;
+    --font-family-regular: Poppins-regular, sans-serif;
+    --font-family-base: nunito, sans-serif;
+    --font-family-heading: Poppins-bold, sans-serif;
+    --font-family-xheading: Poppins-xbold, sans-serif;
+    --font-family-semi: Poppins-semibold, sans-serif;
+
+    /* Font weight */
+    --display-1: 60px;
+    --display-2: 52px;
+
+    --h1-font: 46px;
+    --h2-font: 36px;
+    --h3-font: 28px;
+    --h4-font: 24px;
+
+    --heading-1-bold:  700 var(--h1-font)/1.35 Poppins-bold, sans-serif;
+    --heading-1-med:  500 var(--h1-font)/1.35 Poppins-medium, sans-serif;
+    --heading-1-reg:  400 var(--h1-font)/1.35 Poppins-regular, sans-serif;
+
+    --heading-2-bold:  700 var(--h2-font)/1.4 Poppins-bold, sans-serif;
+    --heading-2-med:  500 var(--h2-font)/1.4 Poppins-medium, sans-serif;
+    --heading-2-reg:  400 var(--h2-font)/1.4 Poppins-regular, sans-serif;
+    
+    --heading-3-bold:  700 var(--h3-font)/1.4 Poppins-bold, sans-serif;
+    --heading-3-med:  500 var(--h3-font)/1.4 Poppins-medium, sans-serif;
+    --heading-3-reg:  400 var(--h3-font)/1.4 Poppins-regular, sans-serif;
+    
+    --heading-4-bold:  700 var(--h4-font)/1.4 Poppins-bold, sans-serif;
+    --heading-4-med:  500 var(--h4-font)/1.4 Poppins-medium, sans-serif;
+    --heading-4-reg:  400 var(--h4-font)/1.4 Poppins-regular, sans-serif;
+
+
+    --fs-20: 20px;
+    --fs-16: 16px;
+    --fs-14: 14px;
+    --fs-12: 12px;
+    --fs-10: 10px;
+    --fs-8: 8px;
+
+    /* Buttons */
+    --btn-font-size-base: 14px;
+    --btn-font-size-lg: 16px;
+    --btn-font-size-sm: 12px;
+
+    --btn-padding-block: .83em;
+    --btn-padding-inline: 2.25em;
+
+    --btn-border-radius: 2.25em;
+
+    /* Shadow */
+    --shadow: 0 4px 28px rgba(0,0,0, .08);
+    --shadow2: 0 4px 28px -2px rgba(0,0,0, .08);
+}
+
+body{
+    font-size: 20px;
+    color: var(--body-color);
+    background-color: var(--body-bg);
+    scroll-behavior: smooth;
+    font-family: var(--font-family-base);
+}
+/* ******************* reboot css ****************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins-regular', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: .4s all;
+}
+button{
+    background: transparent
+}
+ul ol {
+    list-style: none;
+    padding-left: 0px;
+}
+li:not(:last-child){
+    /* list-style: none; */
+    margin-bottom: 1rem;
+}
+p:not(:last-child){
+    margin-bottom: 0.83rem;
+}
+
+/* ******************** typography ********************  */
+h1, h2, h3, h4, h5, h6{
+    color: var(--heading-color);
+    margin-bottom: .5rem;
+    line-height: 1.4;
+}
+h1, .h1{
+    font: var(--heading-1-bold);
+    color: var(--heading-color);
+}
+
+h2, .h2{
+    font: var(--heading-2-bold);
+    color: var(--heading-color);
+}
+
+h3, .h3{
+    font: var(--heading-3-bold);
+    color: var(--heading-color);
+}
+
+h4, .h4{
+    font: var(--heading-4-bold);
+    color: var(--heading-color);
+}
+
+h5, h6{    
+    color: var(--heading-color);
+}
+
+.fs-20{
+    font-size: var(--fs-20);
+}
+.fs-16{
+    font-size: var(--fs-16);
+}
+.fs-14{
+    font-size: var(--fs-14);
+}
+.fs-12{
+    font-size: var(--fs-12);
+}
+.fs-10{
+    font-size: var(--fs-10);
+}
+.fs-8{
+    font-size: var(--fs-8);
+}
+/* ************ buttons ************  */
+
+
