@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Events</h1>
+    </header>
+    <main>
+        <h2>Click</h2>
+        <button id="click">Button</button>
+        <form action="#" id="form">
+            <input type="email" id="input" name="email">
+            <input type="text" id="input2" name="text1">
+            <input type="text" id="input3" name="text1">
+            <input type="text" id="input4" name="text1">
+            <input type="text" id="input5" name="text1">
+            <input type="submit" id="submit">
+        </form>
+        <br>
+        <table border>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Abhinav</td>
+                    <td class="status">Active</td>
+                    <td><button data-id="1" class="delete">Delete</button> <button data-id="1" class="deactivate">Deactive</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sumit</td>
+                    <td class="status">Active</td>
+                    <td><button data-id="2" class="delete">Delete</button> <button data-id="2" class="deactivate">Deactive</button></td>
+                </tr>
+            </tbody>
+
+        </table>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .collapsible{
+            transition: .4s all;
+            max-height: 300px;
+            overflow: hidden;
+        }
+        .collapsible:not(.show){
+            max-height: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="main-heading">Document Object Model(DOM)</h1>
+    </header>
+    <main>
+        <h2 class="h2">Dom</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, modi illum, provident odit quidem rem similique optio, eveniet repudiandae delectus et. Aliquam, dolore modi! Accusantium repellendus earum quidem perspiciatis labore.</p>
+        <section class="section1">
+            <h2 class="h2">Heading 2</h2>
+            <p data-count="20">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, modi illum, provident odit quidem rem similique optio, eveniet repudiandae delectus et. Aliquam, dolore modi! Accusantium repellendus earum quidem perspiciatis labore.</p>
+            <h2 class="h2">Heading 3</h2>
+            <p data-count="40">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum, modi illum, provident odit quidem rem similique optio, eveniet repudiandae delectus et. Aliquam, dolore modi! Accusantium repellendus earum quidem perspiciatis labore.</p>
+        </section>
+        <div class="collapsible show">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui accusamus est aliquid nobis eius illum architecto reiciendis eligendi adipisci vitae! Non ab, quibusdam debitis eius ducimus omnis perspiciatis facilis odio inventore, nam dolores, facere recusandae! Asperiores, laboriosam. Cupiditate, beatae! Beatae labore eveniet dolorum libero ea, facere sit. Sed, fugit, adipisci, deleniti architecto rerum totam voluptates facilis hic ea nihil laudantium vel nemo deserunt? Repellendus ab quisquam eveniet ut maxime nulla ratione dignissimos, quidem pariatur quasi eligendi provident laudantium excepturi laborum error minima ullam accusamus animi at. Ab dolorum voluptatibus, ut vel corporis officiis. Similique animi recusandae neque facilis, assumenda soluta fuga eius, possimus exercitationem qui repudiandae praesentium voluptates, iste dolorum ut accusamus? Accusamus omnis autem itaque esse perferendis tempora quas, ipsa voluptates sapiente sunt, ipsum voluptas? Inventore provident optio quisquam labore pariatur magnam voluptatibus nobis officiis maxime! Officiis magni consectetur, minus quia, asperiores tempore unde aliquid placeat tempora dolorem voluptatibus?
+        </div>
+        <button class="collapse-btn">Remove content</button>
+        <button class="show-btn">Addback content</button>
+        <button class="toggle-btn">Toggle content</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

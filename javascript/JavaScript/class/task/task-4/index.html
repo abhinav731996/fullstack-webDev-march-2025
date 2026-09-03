@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Directory</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    td, th {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+    thead {
+      background: #f0f0f0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="user-app">
+    <h2>User Directory</h2>
+    <table>
+      <thead>
+        <tr>
+          <td>ID</td>
+          <td>Name</td>
+          <td>Role</td>
+          <td>Active</td>
+        </tr>
+      </thead>
+      <tbody id="tabledata"></tbody>
+    </table>
+    <p id="summary"></p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

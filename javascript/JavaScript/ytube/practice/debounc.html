@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Debouncing Example</title>
+</head>
+<body>
+
+    <input 
+        type="text" 
+        id="search" 
+        placeholder="Type something..."
+    />
+
+    <script>
+
+        function debounce(func, delay) {
+
+            let timeoutId;
+
+            return function (...args) {
+
+                clearTimeout(timeoutId);
+
+                timeoutId = setTimeout(() => {
+                    func.apply(this, args);
+                }, delay);
+            };
+        }
+
+
+        const fetchData = (event) => {
+            console.log("Fetching data for:", event.target.value);
+        };
+
+
+        // Debounced Function
+        const debouncedFetch = debounce(fetchData, 500);
+
+
+        // Event Listener
+        document
+            .getElementById("search")
+            .addEventListener("input", debouncedFetch);
+
+    </script>
+
+</body>
+</html>
