@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reordering</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        first-last
+        <div class="row">
+            <div class="col order-md-last orange">col-1</div>
+            <div class="col pink">col-2</div>
+            <div class="col order-md-first blue">col-3</div>
+            <div class="col green">col-4</div>
+        </div>
+        <br>
+        1,2,3,4
+        <div class="row">
+            <div class="col order-md-2 orange">col-1</div>
+            <div class="col order-md-3 pink">col-2</div>
+            <div class="col order-md-4 blue">col-3</div>
+            <div class="col order-md-1 green">col-4</div>
+        </div>
+        setting up content
+        <div class="row">
+            <div class="col-md-8 order-md-2 orange">
+                <h2>Heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil animi saepe expedita, nemo quae amet natus placeat vero odit aspernatur dolore officia recusandae magnam quis molestias vitae totam ullam sapiente?</p>
+            </div>
+            <div class="col-md-4 order-md-1 pink">
+                <ul>
+                    <li>Home</li>
+                    <li>about</li>
+                    <li>prduct</li>
+                    <li>contect</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

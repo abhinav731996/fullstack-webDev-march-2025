@@ -1,0 +1,34 @@
+body{
+    background-color: lightgray;
+}
+
+#header{
+    background-color: orange;
+    padding: 10px 0 10px 10px;
+}
+
+#menu{
+    background-color: pink;
+    padding: 3px;
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+}
+#menu ul li{
+    display: inline-block;
+
+}
+
+#content{
+    background-color: white;
+}
+
+#sidebar{
+    background-color: lightblue;
+}
+
+#footer{
+    background-color: orange;
+    
+}

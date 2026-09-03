@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <style>
+      .Fasq .accordion-item {
+        background: #f2f2f2;
+        border-radius: 10px;
+        border: none;
+        overflow: hidden;
+      }
+
+      .Fasq .accordion-button {
+        background: #f2f2f2;
+        font-weight: 500;
+      }
+
+      .Fasq .accordion-button::after {
+        content: "";
+        background-image: url("./image/rightup.png");
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: brightness(0);
+        transform: rotate(-180deg);
+        width: 22px;
+        height: 22px;
+      }
+
+      .Fasq .accordion-button:not(.collapsed)::after {
+        transform: rotate(0deg);
+        filter: none;
+      }
+
+      .Fasq .accordion-button:focus {
+        box-shadow: none;
+      }
+
+      .Fasq .accordion-body {
+        padding-top: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container py-4">
+      <header>
+        <h1 class="mb-4">Accordion</h1>
+      </header>
+
+      <main>
+        <section class="Fasq">
+          <div class="accordion d-flex flex-column gap-3" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  What is Bootstrap and why is it used in this website?
+                </button>
+              </h2>
+
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Bootstrap is a powerful, open-source CSS framework used to
+                  create fast, responsive, and modern websites.
+
+                  <div class="accordion mt-3" id="nestedAccordion1">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#nestedOne"
+                        >
+                          Nested Accordion – 1
+                        </button>
+                      </h2>
+
+                      <div
+                        id="nestedOne"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#nestedAccordion1"
+                      >
+                        <div class="accordion-body">
+                          This is nested accordion content inside the first
+                          accordion item.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            \
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How does Bootstrap help in making a website responsive?
+                </button>
+              </h2>
+
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Bootstrap uses a 12-column grid system, breakpoints and
+                  responsive utilities that adjust layout across all screens.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Can I customize Bootstrap components?
+                </button>
+              </h2>
+
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Yes, Bootstrap is fully customizable using CSS overrides,
+                  utility classes and SASS.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse4"
+                  aria-expanded="false"
+                  aria-controls="collapse4"
+                >
+                  What version of Bootstrap is this website using?
+                </button>
+              </h2>
+
+              <div
+                id="collapse4"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  This website uses the latest Bootstrap version for best
+                  performance & accessibility.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse5"
+                  aria-expanded="false"
+                  aria-controls="collapse5"
+                >
+                  Do I need advanced coding to use Bootstrap?
+                </button>
+              </h2>
+
+              <div
+                id="collapse5"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  No. Bootstrap is designed for beginners and includes
+                  ready-made components.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+.container-fluid{
+    border: 2px solid firebrick;
+}
+.container{
+    border: 2px solid cadetblue;
+}
+.row{
+    border: 2px solid red;
+}
+.col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+    border: 2px solid black;
+}
+
+#header{
+    background-color: orange;
+}
+
+#menu{
+    background-color: pink;
+}
+
+#content{
+
+}
+
+#sidebar{
+    background-color: lightblue;
+}
+
+#footer{
+    background-color: orange;
+}

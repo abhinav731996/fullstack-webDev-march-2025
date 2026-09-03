@@ -1,0 +1,9 @@
+.faqs .accordion-button{
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+}
+.faqs .accordion-item{
+    --bs-accordion-border-width: 0;
+}
+.faqs .accordion-button::after{
+    background-image: url("./image/arrow.png");
+}
