@@ -1,0 +1,3 @@
+from package.dashboard.studentDashboard import dashboard_management
+
+dashboard_management()
