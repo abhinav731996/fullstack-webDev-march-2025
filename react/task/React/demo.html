@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+ </head>
+ <body>
+ <!-- <div id="mydiv"></div> -->
+ <div id="root"></div>
+ <script type="text/babel">
+    // // component.... function component
+
+    //    function Hello() {
+    //        return <h1>Hello React World!</h1>;
+    //     }
+    //    const container = document.getElementById('mydiv');
+    //    const root = ReactDOM.createRoot(container);
+    //    root.render(<Hello/>)
+
+    // // Address.jsx
+    function Address() {
+        return (<div>This is the address of react.....</div>)
+    }
+
+    // // SumOfAB.jsx
+    function SumOfAB() {
+        const a = 10
+        const b = 20
+        return <h1>Sum of a & b = {a+b} <br/> <Address/></h1>;
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<SumOfAB/>)
+
+ </script>
+ </body>
+</html
