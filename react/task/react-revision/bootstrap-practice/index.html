@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div
+          class="clo col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+        >
+          Card-1
+        </div>
+        <div
+          class="clo col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+        >
+          Card-2
+        </div>
+        <div
+          class="clo col-md-6 col-lg-4 d-flex justify-content-center align-items-center"
+        >
+          Card-3
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <ul id="menu">
+          <li>home</li>
+          <li>about</li>
+          <li>contect</li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+            <input type="text" id="search">
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      let a = "";
+      console.log(typeof a);
+      // --------------------------------------------
+
+      function test() {
+        let a = 12;
+        console.log(a);
+      }
+      test();
+      // -----------------------------------------------
+
+      function outer() {
+        let count = 0;
+        return function () {
+          count++;
+          console.log(count);
+        };
+      }
+      const counter = outer();
+      counter();
+      counter();
+      // -----------------------------------------------
+
+      function otr() {
+        let a = 3;
+        function inr() {
+          console.log(a);
+        }
+        inr();
+      }
+      otr();
+      // -----------------------------------------------
+
+      const user = {
+        name: "abhinav",
+        show() {
+          console.log(this.name);
+        },
+      };
+      // ----------------------------------------------
+
+      function one() {
+        console.log("function one call");
+
+        two();
+      }
+      function two() {
+        console.log("function two call");
+
+        three();
+      }
+      function three() {
+        console.log("function three call");
+
+        console.log("Done");
+      }
+
+      one();
+      // ----------------------------------------------
+
+      console.log("event loop start");
+      setTimeout(() => {
+        console.log("timer");
+      }, 1000);
+
+      console.log("event loop end");
+
+      //// Repeat every after 1second
+      // console.log('event loop start');
+      // setInterval(()=>{
+      //     console.log("timer");
+
+      // }, 1000);
+      // console.log("event loop end");
+      // -----------------------------------------------
+
+      const promise = new Promise((resolve, reject) => {
+        resolve("successfully");
+      });
+
+      console.log(promise);
+      //   ------------------------------------------------
+
+      async function getData() {
+        const data = await fetch(URL);
+      }
+      // -------------------------------------------------
+
+      console.log("1");
+
+      setTimeout(() => console.log("2"));
+
+      Promise.resolve().then(() => {
+        console.log("3");
+      });
+
+      console.log("4");
+      // -------------------------------------------------
+
+      const ul = document.getElementById("menu");
+      // ul.addEventListener("click", (e) => {
+      //     console.log(e.target.innerText);
+      // })
+      ul.addEventListener("click", (e) => {
+        if (e.target.tagName === "LI") {
+          console.log("Clicked:", e.target.innerText);
+        }
+      });
+    //   -------------------------------------------------
+
+    for(let i = 1; i <= 10; i++){
+        console.log(`2*${i} = ${2*i}`);
+    }
+
+    
+    let x = 0;
+    do{
+        console.log(x);
+        x++;
+        
+    }while(x<3)
+
+
+    while(x<5){
+        console.log(x);
+        x++;
+    }
+
+    let str = 'abhi';
+    let size = 0;
+
+    for(const i of str){
+        console.log("i = ", i );
+        size++;
+    }
+    console.log("string size = ", size);
+    
+    let student = {
+        name: "Abhinav",
+        age: 20,
+        cgpa: 9,
+        isPass: true,
+    }
+
+    for(let key in student){
+        console.log("key = ", key, "value = ", student[key]);
+        
+    }
+    // -------------------------------------------------
+
+    let acc = [4, 2, 8, 5, 9, 3]
+    acc.sort((a,b)=>a-b);
+    console.log(acc);
+    // ------------------------------------------------
+
+    const num = [1,2,3,4];
+    const result = num.map(num => num*2);
+    console.log(result);
+    
+    let userMap = [
+        {
+            name: "abhinav",
+            age: 26,
+        },
+        {
+            name: "deepak",
+            age: 28,
+        },
+    ]
+
+    const nameByMap = userMap.map(user => user.name);
+    console.log(nameByMap);
+
+    let studentWithA = userMap.filter(user => user.name.startsWith('a'));
+    console.log(studentWithA);
+    // -------------------------------------------------------
+
+    function debounce(fn, delay) {
+    let timer;
+
+    return function (...args) {
+        clearTimeout(timer);
+
+        timer = setTimeout(() => {
+            fn.apply(this, args);
+        }, delay);
+    };
+}
+
+const input = document.getElementById("search");
+
+function searchData(event) {
+    console.log("Searching:", event.target.value);
+}
+
+const debouncedSearch = debounce(searchData, 1000);
+
+input.addEventListener("input", debouncedSearch);
+
+    
+
+    </script>
+  </body>
+</html>

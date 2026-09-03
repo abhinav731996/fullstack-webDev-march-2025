@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: $font-regular;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #111827;
+  background-color: #f9fafb;
+}
+
+// HEADINGS
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  font-weight: $font-bold;
+  margin: 0;
+}
+
+// PARAGRAPH
+p {
+  margin: 0;
+  font-family: $font-primary;
+}
+
+// LINKS
+a {
+  text-decoration: none;
+  font-family: $font-primary;
+}
+
+// BUTTONS
+button {
+  font-family: $font-primary;
+}
+
+.stat-card,
+.chart-container,
+.table-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 998;
+  display: none;
+}
+
+.sidebar-overlay.show-overlay {
+  display: block;
+}
+
+@media (min-width: 769px) {
+  .sidebar-overlay {
+    display: none !important;
+  }
+}

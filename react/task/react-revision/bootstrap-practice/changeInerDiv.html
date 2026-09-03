@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: rgb(212, 212, 227);
+        height: 100px;
+        padding: 10px;
+        color: rgb(71, 67, 67);
+        position: relative;
+      }
+      .INER {
+        background-color: rgb(137, 213, 213);
+        position: absolute;
+      }
+      .OUTER {
+        background-color: blanchedalmond;
+        top: 50%;
+        position: fixed;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>HERE TIS THE TAG</h1>
+    <div class="container">
+      <div class="INER">INER DIV</div>
+      <div class="OUTER">OUTER DIV</div>
+    </div>
+    <script>
+      const innerDiv = document.querySelector(".INER");
+      innerDiv.innerHTML = "Hello World";
+    </script>
+  </body>
+</html>
