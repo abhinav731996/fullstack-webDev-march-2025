@@ -1,0 +1,18 @@
+.btn{
+    --font-size: #{$btn-font-size};
+    --padding-y: .25em;
+    --padding-x: .75em;
+    --border-color: transparent;
+    --border-width: 1px;
+    --border-style: solid;
+    --btn-bg: lightgray;
+    --color: $baseColor;
+
+    font-size: var(--font-size);
+    padding: var(--padding-y) var(--padding-x);
+    border: var(--border-width) var(--border-style) var(--border-color);
+    background-color: var(--btn-bg);
+    color: var(--color);
+
+}
+@include generate_theme_buttons($theme_colors);

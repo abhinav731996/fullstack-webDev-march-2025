@@ -1,0 +1,20 @@
+$primary:blue;
+$secondary: orange;
+$black: black;
+$white: white;
+$success: green;
+
+$color:(
+    "primary": $primary,
+    "secondary": $secondary,
+    "black": $black,
+    "white": $white,
+
+);
+$custom_colors: (
+    "success": $success
+);
+
+$color: map-merge($color, $custom_colors );
+
+$fontfamily: sans-serif;

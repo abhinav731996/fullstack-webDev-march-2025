@@ -1,0 +1,80 @@
+// color
+$primary: rgb(6, 6, 152);
+$secondary: rgb(232, 156, 14);
+$basecolor: rgb(27, 26, 26);
+
+$theme_colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+);
+
+$bodyBG: #fff;
+
+
+:root{
+    --abc: #fff;
+
+}
+
+
+// font
+
+$basefont: 1rem;
+$fontFamilyBase: 'roboto', sans-serif ;
+$fontFamilyHeading: 'montserrat', sans-serif ;
+$fonts: (
+    1: $basefont *2.5,
+    2: $basefont *2,
+    3: 1.75rem,
+    4: 1.5rem,
+    5: 1.25rem,
+    6: 1rem,
+);
+
+@each $key, $value in $fonts{
+    .fs-#{key}{
+        font-size: $value;
+    }
+    .h#{key}, h#{$key}{   
+        font-size: $value;
+        font-family: $fontFamilyHeading;
+        font-weight: 700;
+    }
+}
+// buttons
+$btn-font-size: $basefont;
+$btn-font-size-lg: $basefont *1.25;
+$btn-font-size-sm: $basefont *.75;
+
+//spacers
+$spacer: 1rem;
+$spacers: (
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer * .75,
+    4: $spacer * 1,
+    5: $spacer * 1.25,
+    6: $spacer * 1.5,
+    7: $spacer * 2,
+);
+
+$spacersiders: ('top':'t', 'bottom':'b', 'right':'r', 'left':'l', 'block':'y', 'inline':'x');
+
+@each $key, $value in $spacers{
+    .p-#{$key}{
+        padding: $value;
+    }
+    @each $side, $suffix in $spacersiders{
+        .p#{$suffix}-#{$key}{
+            padding-#{$side}: $value;
+        }
+    }
+    .m-#{$key}{
+        margin: $value;
+    }
+    @each $side, $suffix in $spacersiders{
+        .m#{$suffix}-#{$key}{
+            margin-#{$side}: $value;
+        }
+    }
+}

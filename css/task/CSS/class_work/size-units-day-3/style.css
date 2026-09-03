@@ -1,0 +1,75 @@
+.px{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+}
+
+.cm{
+    width: 5cm;
+    height: 5cm;
+    background-color: aquamarine;
+}
+
+.pt{
+    width: 200pt;
+    height: 200pt;
+    background-color: red;
+}
+.rem{
+    width: 10rem;
+    height: 10rem;
+    background-color: blueviolet;
+}
+
+.em{
+    width: 10em;
+    height: 10em;
+    background-color: blueviolet;
+}
+
+main{
+    font-size: 20px;
+}
+
+.vw{
+    width: 10vw;
+    height: 10vw;
+    background-color: black;
+}
+.vh{
+    width: 10vh;
+    height: 10vh;
+    background-color: black;
+}
+.percentage{
+    width: 40%;
+    height: 30%;
+    background-color: brown;
+}
+.container{
+    height: 400px;
+}
+.auto{
+    height: 200px;
+    width: auto;
+    background-color: yellow;
+}
+p{
+    margin: 1rem;
+}
+.div{
+    height: 100px;
+}
+.max-content{
+    width: max-content;
+    background-color: aqua;
+}
+.min-content{
+    width: min-content;
+    background-color: aqua;
+}
+.fit-content{
+    width: fit-content;
+    background-color: aqua;
+}

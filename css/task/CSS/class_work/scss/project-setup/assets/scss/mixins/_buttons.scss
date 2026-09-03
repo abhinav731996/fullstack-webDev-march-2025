@@ -1,0 +1,14 @@
+@mixin generate_theme_buttons ($theme_colors){
+    @each $key, $value in $theme_colors{
+        .btn-#{$key}{
+            --border-color: #{$value};
+            --btn-bg: #{$value};
+            @if (is dark ($value)){
+                --color: #fff;
+            }
+            @else{
+                --color: #000;
+            }
+        }
+    }
+}

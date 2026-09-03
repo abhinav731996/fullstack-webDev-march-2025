@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $fontfamily;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+    li{
+        margin-bottom: 1rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+a{
+    text-decoration: none;
+
+}
+p:not(:last-child), h5, h6{
+    margin-bottom: .75rem;
+}

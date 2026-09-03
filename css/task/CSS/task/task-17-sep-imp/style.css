@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    max-width: 800px;
+    margin-inline: auto;
+    border: 2px solid black;
+    position: relative;
+}
+.d-flex{
+    display: flex;
+
+}
+.flex-column{
+    flex-direction: column;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+     align-items: center;
+}
+
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid gray;
+}
+.border{
+    border: 2px solid gray;
+    overflow: hidden;
+}
+.rounded{
+    border-radius: 5px;
+}
+.sidebar{
+    width: 20%;
+    background: #000;
+    border-radius: 10px 0 0 0;
+}
+.main{
+    margin-top: 40px;
+    width: 80%;
+    padding: 30px;
+}
+.hero{
+    height: 100px;
+    background: #a8a8a8;
+    margin-bottom: 40px;
+}
+.section-2{
+    gap: 2rem;
+    margin-bottom: 40px;
+}
+.section-2 .left-panel, .section-2 .border-wrapper{
+    width: 40%;
+    flex-grow:  1;
+
+}
+.section-2 .panel-top, .section-2 .bottom-panel{
+    gap: 4px;
+    margin-bottom: 40px;
+    padding: .25rem;
+     
+}
+.section-2 .left-panel .box{
+    width: 25%;
+    flex-grow: 1;
+    height: 80px;
+}
+.bg-gray{
+    background-color: #d0d0d0;
+}
+.bg-white{
+    background-color: white;
+}
+.section-2 .bottom-panel{
+    margin-bottom: 0;
+    max-width: 85%;
+}
+.section-2 .bottom-panel .box:last-child{
+    height: 60px;
+    width: 20%;
+    align-items: center;
+}
+.border-wrapper .box{
+    flex-grow: 1;
+}
+.section-3{
+    padding: .5rem;
+    gap: .8rem ;
+
+}
+.section-3 .box:last-child{
+    width:  10%;
+}
+.section-3 .box{
+    width: 18%;
+    aspect-ratio: 4/5;
+}
+.section-3 .border-wrapper .box{
+    width: 100%;
+} 
+.section-3 .border-wrapper .box:first-child{
+    height: 55%;
+}
+.section-3 .border-wrapper .box:last-child{
+    height: 4 5%;
+}
+.border-wrapper{
+    overflow: hidden;
+}
+.section-3 .box:first-child{
+    aspect-ratio: 3/2;
+    align-self: flex-start;
+}

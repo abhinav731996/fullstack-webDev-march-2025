@@ -1,0 +1,72 @@
+@import "./variables";
+@import "./reset";
+@import "./functions";
+@import "./mixins";
+:root{
+    --abc: black;
+}
+
+.text-black{
+    color: black;
+}
+.text-primary-100{
+    color: rgba($black, .1);
+}
+
+.header{
+    background: black;
+    a{
+        color: white;
+        &:hover{
+            color: red;
+        }
+    }
+    &_top{
+        background: red;
+    }
+    .menubar{
+        @include flex(center, center);
+        li{
+            margin-bottom: 0;
+        }
+    }
+}
+
+button{
+    border: 1px solid transparent;
+    border-radius: 0;
+
+}
+h1{
+    font-weight: 700;
+    @extend h1;
+}
+.btn{
+    @extend button;
+}
+li{
+    background: rgba(map-get($map: $color, $key: "success"), .5);
+    color: white;
+}
+@each $key, $value in $color{
+    .text-#{$key}{
+        color: $value;
+    }
+    .bg-#{$key}{
+        background-color: $value;
+        @if(is-dark($value)){
+            color: white;
+        }
+        @else{
+            color: black;
+        }
+    }
+}
+h2{
+    padding: 1rem;
+    font-weight: 900;
+    // background: blue;
+    // color: rgba($primary, .1);
+    // color: lighten($color: red, $amount: 40%);
+    color: darken($color: red, $amount: 30%);
+}

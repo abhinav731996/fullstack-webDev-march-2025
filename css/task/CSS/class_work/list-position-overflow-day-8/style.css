@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.emoji{
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 1rem;
+    
+    /* list-style-image: url("./assets/emoji.jpg"); */
+
+}
+.emoji li::before{
+    content: "";
+    background: url("./assets/emoji.jpg") center/cover no-repeat;
+    width: 10px;
+    display: inline-block;
+    aspect-ratio: 1/1;
+
+}
+.un-style{
+    list-style: none;
+    padding: 20px;
+}
+.un-style li::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    aspect-ratio: 1/1;
+    background: url("./assets/emoji.jpg") center/cover no-repeat;
+    border-radius: 50%;
+    position: relative;
+    right: 5px;
+}
+.div{
+    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+    background: gray;
+}
+.div p{
+    /* position: absolute; */
+    bottom: 0;
+
+}
+.menu ul{
+    list-style: none;
+    display: inline-block;
+    position: relative;
+}
+.menu{
+    position: sticky;
+    top: 0;
+
+}

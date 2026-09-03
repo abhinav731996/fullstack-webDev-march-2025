@@ -1,0 +1,13 @@
+body{
+    font-family: "Fira Code", monospace;
+}
+table{
+    border: 2px solid black;
+}
+.img-responsive{
+    max-width: 100%;
+    width: 100%;
+    max-height: 1000px;
+    object-fit: cover;
+
+}

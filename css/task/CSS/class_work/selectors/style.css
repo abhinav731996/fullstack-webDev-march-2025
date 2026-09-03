@@ -1,0 +1,12 @@
+main:hover p{
+    color: rebeccapurple;
+}
+/* main p:hover{
+    color: red;
+} */
+main p:not(:hover){
+    color: rgb(0, 68, 255);
+}
+.togglecontent:not(.show){
+    display: none;
+}

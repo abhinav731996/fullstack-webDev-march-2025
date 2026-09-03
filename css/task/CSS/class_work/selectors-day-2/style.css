@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    /* padding: 0; */
+    background-color: black;
+    color: white;
+}
+
+p{
+    color:cadetblue;
+}
+#main-heading, .text-green{
+    color: chartreuse;
+}
+.para{
+    color:blueviolet ;
+}
+.bg-yellow{
+    background-color: yellow;
+    color: black;
+}
+
+
+/* attributes */
+
+
+/* for specific or multipule  */
+[data-count]{
+    font-size: 30px;
+}
+/* for underline */
+[class^="bg"]{
+    text-decoration: underline;
+}
+/* for images */
+img[src$=".jpg"]{
+    padding: 10px;
+    background-color: burlywood;
+}
+/* for finding text */
+[class*="text"]{
+    text-decoration: line-through;
+}

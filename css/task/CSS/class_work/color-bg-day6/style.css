@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: white;
+}
+h2{
+    color: red;
+}
+.hex-color{
+    color:rgb(148, 191, 83);
+}
+.hsl-color{
+    color: hsl(9, 100%, 30%);
+}
+.bg-img {
+    background-image: url("../assets/MO102-PoodleTinySepia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 100%;
+}

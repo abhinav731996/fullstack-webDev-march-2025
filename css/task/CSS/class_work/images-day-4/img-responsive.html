@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image responsive</title>
+    <style>
+        .img-responsive{
+            max-width: 100%;
+        }
+        .images{
+            width: calc(50% - 4px);
+            display: inline-block;
+        }
+        .circle{
+            width: 30%;
+            aspect-ratio: 1/1;
+            border-radius: 100px ;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Image - Responsive</h1>
+    </header>
+    <main>
+        <div class="images">
+            <img class="img-responsive" src="./assets/alexander.jpg" alt="alexander">
+
+        </div>
+        <div class="images">
+            <img class="img-responsive" src="./assets/alexander.jpg" alt="alexander">
+
+        </div>
+        <div class="images">
+            <img class="circle" src="./assets/amr-taha.jpg" alt="">
+            <img class="circle" src="./assets/amr-taha.jpg" alt="">
+            <img class="circle" src="./assets/amr-taha.jpg" alt="">
+        </div>
+    </main>
+    <footer>
+        &copy; making image reponsive
+    </footer>
+</body>
+</html>

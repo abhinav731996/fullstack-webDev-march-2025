@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --container-max-width: 1110px;
+
+}
+.container{
+    width: 100%;
+    max-width: var(--container-max-width);
+    margin-inline: auto;
+    min-height: 100px;
+    background-color: red;
+    padding-inline: 1rem;
+}
+@media(max-width: 1199.98px){
+    :root{
+    --container-max-width: 920px;
+    }
+}
+@media(max-width: 991.98px){
+    :root{
+    --container-max-width: 710px;
+    }
+}
+@media(max-width: 767.98px){
+    :root{
+    --container-max-width: 540px;
+    }
+}
+@media(max-width: 574.98px){
+    :root{
+    --container-max-width: 100%;
+    }
+}
+
+.blogs .container{
+    max-width: calc(var(--container-max-width) + ((100vw - var(--container-max-width))/2));
+    margin-right: 0;
+    background-color: green;
+}
+
+:where(.testimonals, .about-us) .container{
+    min-height: 90vh;
+
+}
+:where(.testimonals, .about-us) {
+    position: relative;
+    overflow: hidden;
+
+}
+.testimonals{
+    background-color: gray;
+}
+.strips{
+    display: block;
+    width: min(100px, 12%);
+    height: min(300px, 50vh);
+    background: linear-gradient(#4691F2, #4691F200 );
+    position: absolute;
+    transform-origin: 20% right;
+}
+.strips.left{
+    left: 0;
+    rotate: 315deg;
+    
+}
+.strips.right{
+    right: 0;
+    rotate: -315deg;
+
+}

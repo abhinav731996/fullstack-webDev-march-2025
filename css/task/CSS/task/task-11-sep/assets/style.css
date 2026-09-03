@@ -1,0 +1,53 @@
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fee4be;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background-color: #fef1e4;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 300px;
+  border: 1px solid #ddd;
+}
+
+.card h2 {
+  font-weight: bold;
+}
+
+.card p.author {
+  font-style: italic;
+  color: #444;
+}
+
+.card p.description {
+  font-size: 15px;
+}
+
+.card button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #d9733f;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #c16235;
+}
+.bg-img {
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 300px;
+  border: 1px solid #ddd;
+  background-image: url("../assets/img/bg-image.png");
+  background-size: cover;
+  background-position: center;
+}

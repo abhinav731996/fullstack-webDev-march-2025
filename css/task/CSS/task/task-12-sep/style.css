@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black;
+    color: white; */
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.list {
+  font-size: 20px;
+}
+.emoji {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 1rem;
+}
+.emoji li::before {
+  content: "";
+  background: url("./assets/tick.webp") center/cover no-repeat ;
+  width: 15px;
+  display: inline-block;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: relative;
+  background-color: yellow;
+  right: 5px;
+}
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    /* overflow: hidden; */
+    overflow: scroll;
+  
+}
+
+.card .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+
+.card h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.card p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.btn {
+    display: block;
+    background: #d86b37;
+    color: #fff;
+    font-weight: 600;
+    padding: 14px;
+    text-align: center;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}

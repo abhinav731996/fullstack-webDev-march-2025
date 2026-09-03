@@ -1,0 +1,70 @@
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #f005;
+    margin-top: 20px;
+    /* display: inline-block; */
+    
+}
+
+
+.animation-box{
+    margin-inline: auto;
+    width: 50%;
+    height: 250px;
+    border: 2px solid blue;
+    position: relative;
+    
+}
+.animation-box .box{
+    position: absolute;
+    margin-top: 0;
+    left: 0;
+    top: 0;
+    /* animation-name: movebox;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: movebox 2s linear infinite alternate-reverse;
+}
+
+
+
+/* @keyframes movebox{
+    to{
+        left: calc(100%-100px);
+        
+    }
+} */
+
+
+@keyframes movebox{
+    0%{
+        top: 0;
+        left: 0;
+    }
+    25%{
+        top: 0;
+        left: calc(100% - 100px);
+    }
+    50%{
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+    80%{
+        top: calc(100% - 100px);
+        left: 0;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}

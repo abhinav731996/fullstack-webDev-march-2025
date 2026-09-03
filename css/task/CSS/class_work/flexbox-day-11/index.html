@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            /* margin: 0;
+            padding: 0; */
+            box-sizing: border-box;
+        }
+        .d-flex{
+            display: flex;
+            flex-direction: row;
+            height: 450px;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            row-gap: 2rem;
+            justify-content: flex-start;
+        }
+        .flex-item{
+            flex-grow: 1;
+            width: 20%;
+            /* height: 200px; */
+            background: #ddd;
+            border: 2px solid #000;
+            /* flex-shrink: 1; */
+            flex-basis: 150px ;
+        }
+        .flex-item:first-child{
+            order: 1;
+        }
+        .flex-item:last-child{
+            order: 1;
+        }
+        /* .flex-item:nth-child(2){
+            flex-grow: 1;
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <div class="d-flex">
+            <div class="flex-item">1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis laudantium tempora blanditiis velit iure, molestiae id. Aut, repellat omnis magni quis voluptas, inventore quae quidem nemo voluptatibus sunt, facere molestias.</div>
+            <div class="flex-item">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque rerum quibusdam quos amet assumenda, odio officia ipsam sit nam veniam.</div>
+            <div class="flex-item">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, sit animi est fuga, repellat sint obcaecati suscipit, temporibus ea laboriosam facilis. Aspernatur numquam suscipit minima ipsa officiis vitae laboriosam blanditiis vero soluta quia asperiores consequuntur cumque autem dolorum repellat, ea voluptatum eos quo ipsum aliquam quos tempore, doloremque dolore assumenda. Earum sequi optio ex provident placeat ratione, eligendi itaque laborum?</div>
+            <div class="flex-item">4 Lorem ipsum dolor sit amet.</div>
+            <div class="flex-item">5 item 5</div>
+            <div class="flex-item">6 Lorem ipsum dolor sit amet.</div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg-text{
+    background: #ccc;
+    width: 200px;
+    padding: 20px;
+    border: 20px dashed violet;
+}
+
+.bg-text2{
+    padding-block: 40px;
+    box-sizing: border-box;
+    margin: 10px 0 0 0 ;
+}

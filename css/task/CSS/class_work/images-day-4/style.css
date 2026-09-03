@@ -1,0 +1,36 @@
+.cafe img{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: aqua;
+}
+.cat img{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: aqua;
+}
+.wolf img{
+    border-radius: 50%;
+
+}
+.wolf{
+    border: 2px solid black;
+    padding: 10px;
+    width: fit-content;
+    background-color: rgb(121, 142, 163);
+    border-radius: 10px;
+}
+.car img{
+    border-radius: 10px;
+}
+.path{
+    border: 2px solid black;
+    width: fit-content;
+    padding: 10px;
+    background-color: bisque;
+}
+
+.path img{
+    border-radius: 10px;
+}
