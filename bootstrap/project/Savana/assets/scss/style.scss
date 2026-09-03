@@ -1,0 +1,77 @@
+
+
+@import"./variables";
+
+
+
+@import"./../../node_modules/bootstrap/scss/functions";
+@import"./../../node_modules/bootstrap/scss/variables";
+
+$theme-colors: map-merge($theme-colors , $coustom_theme_colors);
+
+// $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
+
+@import"./../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.primary-light{
+    background-color: $primary-light;
+}
+
+.btn{
+    --bs-border-radius: none;
+    --bs-btn-padding-x: 30px;
+    --bs-btn-padding-y: 15px;
+}
+
+.footer-bottom{
+    --bs-border-opacity: .3;
+}
+.line{
+    width: 108px;
+    height: 1.5px;
+    background-color: black;
+}
+
+.nav-link{
+    --bs-nav-link-color: #513125;
+}
+
+.cormorant {
+  font-family: "Cormorant", serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+}
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+
+.why-us .container .poster{
+    bottom: -20%;
+}
+
+*{
+    font-family: "poppins", sans-serif;
+}
+.membership{
+    background-image: url(./../../assets/images/membership/placeholder.png);
+    background-size: cover;
+}
+
+.about-head{
+    background-image: url(./../../assets/images/about-page/nav/overlay.png);
+    background-size: cover;
+
+}
+
+.contact-head{
+    background-image: url(./../../assets/images/contact-page/nav/overlay.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+// .about-savana{
+//     background-image: url(./../images/about/group-bg.png);
+//     background-size: cover;
+// }

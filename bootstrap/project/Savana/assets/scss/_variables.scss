@@ -1,0 +1,78 @@
+$accent:#C47A5F;
+$primary: #F4EDE5;
+$primary-light: #f3f5fc;
+$secondary: #513125;
+
+
+$coustom_theme_colors: (
+    'accent': $accent
+);
+
+$body-color: #999999;
+$body-bg: #FEFBF6;
+$headings-font-weight: 700;
+
+$headings-color: #513125;
+
+
+// ******* Fonts ********
+
+$font-family-base: "poppins", sans-serif;
+$font-size-base: 1rem;
+
+$line-height-base: 1.85;
+
+$h1-font-size:                $font-size-base * 5.875;
+$h2-font-size:                $font-size-base * 3.9375;
+$h3-font-size:                $font-size-base * 2.25;
+$h4-font-size:                $font-size-base * 1.5625;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+
+// ******** Link-color ******
+$link-color: #C47A5F;
+$link-decoration: none;
+
+$icon-link-gap: $font-size-base * 1.25;
+
+
+// ******** Navlink ************
+
+$nav-link-font-size: $font-size-base * 1.0625;
+$nav-link-font-weight: 500;
+$nav-link-transition:  color .4s ease-in-out, background-color .4s ease-in-out, border-color .4s ease-in-out !default;
+$nav-link-padding-x: .75rem;
+$nav-link-color: #513125;
+$navbar-light-hover-color: $accent;
+$navbar-light-active-color: $accent;
+
+// ******* spacers ********
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .75,     //(12px)
+  2: $spacer,
+  3: $spacer * 1.25,    //(20px)
+  4: $spacer * 2.5,     //(40px)
+  5: $spacer * 3.75,    //(60px)
+  6: $spacer * 9.0625,  //(145px)
+  7: $spacer * 15.625,  //(250px)
+  8: $spacer * 18.125,  //(290px)
+  10: $spacer * 6.25,   //(100px)
+);
+
+
+
+// ******** Container width *********
+
+// $custom-grid-breakpoints: (
+//     xxl: 2000px
+// );
+
+// $container-max-widths: (
+//   xl: 1500px,
+// );
+
+
