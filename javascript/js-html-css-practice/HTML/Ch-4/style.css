@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid rgb(140 140 140);
+  }
+  
+  tr {
+    padding: 5px;
+    border: 1pt solid black;
+  }
+  th {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+  }
+  td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+  }
+  caption {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+  }
