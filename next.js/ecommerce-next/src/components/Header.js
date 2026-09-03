@@ -1,0 +1,163 @@
+"use client";
+import {
+  Navbar,
+  Nav,
+  Container,
+  Form,
+  FormControl,
+  Badge,
+  NavDropdown,
+  Dropdown,
+  NavItem,
+  NavLink,
+} from "react-bootstrap";
+import Link from "next/link";
+import { useSelector, useDispatch } from "react-redux";
+import { logout, register } from "../redux/slices/authSlice";
+import { useEffect, useState } from "react";
+import { Cart, Heart, Shop } from "react-bootstrap-icons";
+import { useRouter } from "next/navigation";
+import Category from "./Category";
+
+const Header = () => {
+  const { cartItems } = useSelector((state) => state.cart);
+  const { wishlistItems } = useSelector((state) => state.wishlist);
+  const { user } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+  const router = useRouter();
+
+  const [search, setSearch] = useState("");
+  useEffect(() => {
+    const user = localStorage.getItem("user");
+    if (user) {
+      dispatch(register(JSON.parse(user)));
+    }
+  }, []);
+
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
+  // Handle Search
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (search.trim()) {
+      router.push(`/shop?search=${search}`);
+    }
+  };
+
+  return (
+    <Navbar
+      bg="dark"
+      variant="dark"
+      style={{ height: "80px" }}
+      expand="lg"
+      sticky="top"
+    >
+      <Container>
+        {/* LOGO */}
+        <Navbar.Brand as={Link} href="/">
+          <Shop /> Shopify
+        </Navbar.Brand>
+
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+          {/* SEARCH BAR */}
+          <Form className="d-flex mx-auto" onSubmit={handleSearch}>
+            <FormControl
+              type="search"
+              placeholder="Search products..."
+              className="me-2"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </Form>
+          <Dropdown as={NavItem} className="mt-2">
+            <Dropdown.Toggle as={NavLink}>
+              <Badge bg="Dark">
+                <h5>Categories</h5>
+              </Badge>
+            </Dropdown.Toggle>
+            <Dropdown.Menu>
+              <Dropdown.Item>
+                <Category />
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
+          {/* RIGHT MENU */}
+          <Nav className="ms-auto align-items-center">
+            {/* WISHLIST */}
+            <Nav.Link as={Link} href="/wishlist" className="position-relative">
+              <Heart size={20} />
+              {wishlistItems.length > 0 && (
+                <Badge
+                  bg="danger"
+                  className="position-absolute top-0 start-100 translate-middle"
+                >
+                  {wishlistItems.length}
+                </Badge>
+              )}
+            </Nav.Link>
+
+            {/* CART */}
+            <Nav.Link as={Link} href="/cart" className="position-relative">
+              <Cart size={20} />
+              {cartItems.length > 0 && (
+                <Badge
+                  bg="success"
+                  className="position-absolute top-0 start-100 translate-middle"
+                >
+                  {cartItems.length}
+                </Badge>
+              )}
+            </Nav.Link>
+
+            {/* USER */}
+            {mounted && user ? (
+              <NavDropdown title={` ${user.name}`} align="end">
+                <NavDropdown.Item as={Link} href="/account">
+                  Profile
+                </NavDropdown.Item>
+
+                <NavDropdown.Item as={Link} href="/account/editProfile">
+                  Profile edit
+                </NavDropdown.Item>
+
+                <NavDropdown.Item as={Link} href="/account/orders">
+                  Orders
+                </NavDropdown.Item>
+
+                <NavDropdown.Divider />
+
+                <NavDropdown.Item
+                  onClick={() => {
+                    dispatch(logout());
+                    router.push("/auth/login");
+                  }}
+                >
+                  Logout
+                </NavDropdown.Item>
+              </NavDropdown>
+            ) : (
+              <>
+                <Nav.Link as={Link} href="/auth/login">
+                  Logout
+                </Nav.Link>
+                <Nav.Link as={Link} href="/auth/register">
+                  Sign Up
+                </Nav.Link>
+              </>
+            )}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+};
+
+export default Header;

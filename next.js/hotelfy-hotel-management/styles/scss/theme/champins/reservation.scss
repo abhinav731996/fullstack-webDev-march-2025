@@ -1,0 +1,62 @@
+@import './../variables';
+
+.reservation-page {
+    background-color: $bg-main;
+    font-family: 'Inter', sans-serif;
+
+    .custom-table {
+        th {
+            font-size: 15px;
+            background-color: #f8f9fa !important;
+            white-space: nowrap;
+            span {
+                margin-left: 5px;
+                color: #adb5bd;
+                cursor: pointer;
+            }
+        }
+        td {
+            font-size: 14px;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+    }
+    .payment-indicator {
+        width: 8px;
+        height: 8px;
+        border-radius: 2px;
+        display: inline-block;
+    }
+    .payment-paid {
+        background-color: #198754;
+    }
+    .payment-unpaid {
+        background-color: #dc3545;
+    }
+
+    .status{
+        width: 150px;
+    }
+    .badgetext{
+        font-size: 13px;
+    }
+    .card-text{
+        font-size: 10px;
+    }
+
+    .percentage-text{
+        background-color: #D8EB12 !important;
+        color: rgb(2, 2, 2);
+    }
+
+    .icon{
+        width: 32px;
+        height: 32px;
+    }
+}
+@media (max-width:756px) {
+    h2{
+        display: none;
+    }
+    
+}

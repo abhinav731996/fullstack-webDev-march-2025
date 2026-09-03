@@ -1,0 +1,36 @@
+@import "../theme/variables";
+
+.footer {
+  // border-top: 1px solid $border;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: $text-light;
+  font-size: 13px;
+  cursor: pointer;
+}
+.hov {
+  &:hover {
+    color: $primary;
+  }
+}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: $text-light;
+  font-size: 13px;
+  cursor: pointer;
+}
+.iconHov{
+  &:hover {
+    color: $primary;
+  }
+}

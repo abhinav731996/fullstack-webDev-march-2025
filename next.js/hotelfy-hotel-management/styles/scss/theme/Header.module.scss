@@ -1,0 +1,154 @@
+@import "../theme/variables";
+
+.header {
+  height: 70px;
+  // background: $white;
+  // border-bottom: 1px solid $border;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* LEFT (LOGO) */
+.left {
+  width: 60px;
+  display: flex;
+  align-items: center;
+
+  /*  Hide on desktop */
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.logo {
+  font-size: 22px;
+  color: $primary;
+}
+
+/* CENTER (TITLE) */
+.center {
+  // position: absolute;
+  // padding: 20px;
+  // left: 50%;
+  // transform: translateX(-50%);
+  
+  h4 {
+    margin: 0;
+    font-weight: 600;
+  }
+  @media (max-width: 768px) {
+    // left: 50%;
+  // transform: translateX(-50%)
+  }
+}
+
+/* RIGHT (MENU ICON) */
+.righttog {
+  width: 60px;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+/* RIGHT */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  @media (max-width: 768px) {
+    display: none; // optional (clean UI like your image)
+  }
+}
+
+/* SEARCH */
+.search {
+  position: relative;
+
+  input {
+    width: 260px;
+    padding: 8px 14px 8px 35px;
+    border-radius: 20px;
+    border: 1px solid $border;
+    font-size: 13px;
+    background: $bg-main;
+  }
+
+  // @media (max-width: 768px) {
+  //   width: 100%;
+  //   margin-top: 10px;
+
+  //   input {
+  //     width: 100%;
+  //   }
+  // }
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: $text-light;
+}
+
+/* ICONS */
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.iconBox {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: $bg-main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  svg {
+    font-size: 16px;
+  }
+}
+
+/* PROFILE */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  small {
+    font-size: 12px;
+    color: $text-light;
+  }
+
+  //  @media (max-width: 768px) {
+  //   display: none; // optional (clean UI like your image)
+  // }
+}
+
+.topBar{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

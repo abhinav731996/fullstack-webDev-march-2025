@@ -1,0 +1,53 @@
+$primary: #258BFB;
+$primary-light: #eff6ff;
+
+$bg-main: #EEF3F9;
+$bg-light: #F8F8F8;
+$white: #ffffff;
+
+$text-dark: #111827;
+$text-light: #8E8E8E;
+
+$border: #e5e7eb;
+
+$radius: 12px;
+
+$btn-yellow: #D8EB12;
+$success: #D8EB12;
+
+$chart-blue: #8ab4f8;
+$chart-gray: #e9ecef;
+$chart-yellow-light: #f3f7a1;
+
+$text-muted: #6c757d;
+$text-gray: #495057;
+$text-gray-light: #adb5bd;
+
+$bg-muted: #f1f5f9;
+$bg-gray-light: #f1f3f5;
+$bg-light-alt: #f8f9fa;
+
+$danger: #d9534f;
+$success-bg: #e5f0ff;
+
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100vh;
+  background: white;
+  z-index: 1050;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,314 @@
+@import "../variables";
+
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+.container {
+  padding: 20px;
+  background: $bg-main;
+  border-radius: $radius;
+  font-size: 12px;
+}
+
+/* ================= HEADER ================= */
+.cardPrimary {
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: $radius;
+  background: $primary;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  .leftDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 250px;
+
+    span {
+      background-color: $btn-yellow;
+      color: black;
+      font-size: 12px;
+      padding: 3px 10px;
+      border-radius: $radius;
+    }
+  }
+
+  .card {
+    width: 250px;
+    background: $white;
+    border-radius: 12px;
+    padding: 15px;
+    color: black;
+    display: flex;
+
+    h3 {
+      font-size: 22px;
+      font-weight: 500;
+    }
+    p {
+      color: $text-light;
+      font-size: 12px;
+      margin: 0%;
+    }
+    span {
+      background-color: $btn-yellow;
+      color: black;
+      font-size: 12px;
+      padding: 3px 13px;
+      border-radius: $radius;
+    }
+    .cdlogo {
+      background-color: $primary;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: $white;
+    }
+    .spanBg {
+      background-color: #ffd9d8;
+      color: black;
+      font-size: 12px;
+      padding: 3px 13px;
+      border-radius: $radius;
+    }
+  }
+  p {
+    color: $white;
+    font-size: 12px;
+  }
+}
+
+/* ================= MAIN ================= */
+
+.main {
+  display: flex;
+  gap: 20px;
+
+  @media (max-width: $lg) {
+    flex-direction: column;
+  }
+}
+
+/* LEFT */
+.left {
+  display: flex;
+  flex-direction: column;
+  background: $white;
+  border-radius: $radius;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.searchfil {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  // width: 100%;
+}
+
+// main searchbar
+.search {
+  position: relative;
+  // width: 100%;
+
+  input {
+    // width: 260px;
+    padding: 8px 14px 8px 35px;
+    border-radius: 20px;
+    border: 1px solid $border;
+    font-size: 13px;
+    background: $bg-main;
+  }
+}
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: $text-light;
+}
+.filterBtn {
+  background: $bg-main;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 50%;
+}
+
+// /* ================= TABLE ================= */
+.tableWrapper {
+  max-height: 500px;
+  width: 100%;
+  overflow-x: auto;
+
+  table {
+    min-width: 600px;
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+      background: $bg-main;
+      font-size: 12px;
+      color: $text-light;
+    }
+
+    th,
+    td {
+      padding: 12px;
+    }
+
+    tr {
+      border-bottom: 1px solid $bg-light;
+      cursor: pointer;
+      font-size: 12px;
+    }
+  }
+}
+
+.activeRow {
+  background: $bg-light;
+}
+
+/* BADGES */
+.badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-transform: capitalize;
+}
+
+/* PAID */
+.paid::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $primary;
+  display: inline-block;
+}
+
+/* UNPAID */
+.unpaid::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ff4d4f;
+  display: inline-block;
+}
+
+/* ================= RIGHT PANEL ================= */
+.right {
+  flex: 1;
+  background: $white;
+  border-radius: 12px;
+  padding: 15px;
+  height: 100%;
+}
+
+.invoiceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-light;
+  padding: 5px 20px;
+  border-radius: $radius;
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
+
+.invoiceId {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: medium;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+/* GRID */
+.infoGrid {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+
+  @media (max-width: $md) {
+    flex-direction: column;
+  }
+}
+
+.label {
+  //   font-size: 12px;\
+  color: #777;
+}
+
+/* DATE */
+.dateRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin: 10px 0;
+
+  @media (max-width: $sm) {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* ITEMS */
+.itemsTable {
+  width: 100%;
+  margin-top: 10px;
+
+  th {
+    background: $bg-light;
+  }
+
+  th,
+  td {
+    padding: 10px;
+  }
+
+  tr {
+    border-bottom: 1px solid $bg-light;
+    cursor: pointer;
+    font-size: 12px;
+  }
+}
+
+/* SUMMARY */
+.summary {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+  .total {
+    font-weight: bold;
+    font-size: 13px;
+  }
+}

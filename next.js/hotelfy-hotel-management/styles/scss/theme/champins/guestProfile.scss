@@ -1,0 +1,265 @@
+@import './../variables';
+
+.guest-profile-page {
+    background-color: $bg-main;
+    font-family: 'Inter', sans-serif;
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Crect width='120' height='120' fill='%23e9ecef'/%3E%3Cpath d='M0 0h120v120H0z' fill='none'/%3E%3Cpath fill='%23ced4da' d='M0 0h12v12H0zm24 0h12v12H24zm24 0h12v12H48zm24 0h12v12H72zm24 0h12v12H96zm12 12h-12v12h12zm0 24h-12v12h12zm0 24h-12v12h12zm0 24h-12v12h12zm0 24h-12v12h12zM0 108h12v12H0zm0-24h12v12H0zm0-24h12v12H0zm0-24h12v12H0zm12-12h12v12H12zm24 0h12v12H36zm24 0h12v12H60zm24 0h12v12H84zm24 0h12v12h-12zM12 96h12v12H12zm24 0h12v12H36zm24 0h12v12H60zm24 0h12v12H84zm-60-24h12v12H24zm24 0h12v12H48zm24 0h12v12H72zm-48-24h12v12H24zm24 0h12v12H48zm24 0h12v12H72z'/%3E%3C/svg%3E");
+    background-size: cover;
+}
+
+.gold-member-card {
+    background-color: #c4a35a;
+    color: white;
+
+    .points-badge {
+        font-size: 12px;
+        background-color: rgba(255, 255, 255, 0.2) !important;
+        color: white !important;
+    }
+
+    .award-icon {
+        opacity: 0.9;
+    }
+
+    .progress-track {
+        height: 8px;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        flex-grow: 1;
+    }
+
+    .progress-fill {
+        width: 60%;
+        height: 100%;
+        background-color: #7a5c29;
+        border-radius: 4px;
+    }
+
+    .checkmark-icon {
+        color: #7a5c29;
+    }
+
+    .earn-text {
+        max-width: 60%;
+        opacity: 0.9;
+        font-size: 11px;
+    }
+
+    .learn-btn {
+        font-size: 12px;
+        color: #7a5c29;
+    }
+}
+
+.reward-item {
+    background-color: #EEF3F9 !important;
+
+    .reward-text {
+        font-size: 11px;
+    }
+}
+
+.stay-info-images {
+    height: 150px;
+
+    .image-placeholder {
+        background-image: url("https://cdn.prod.website-files.com/62b1b17308b0d74291186304/672f4fbfb3638bf1cc97ce0f_672f498462cbddaad472142e_double%2520room%2520hote%2527.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .image-placeholder-simple1 {
+        background-image: url("https://cdn.pixabay.com/photo/2020/02/27/07/22/living-4883644_1280.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .image-placeholder-simple2 {
+        background-image: url("https://www.shutterstock.com/image-photo/luxurious-bathroom-freestanding-bathtub-600nw-2472337571.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .image-placeholder-simple3 {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP1YpzSvPweRPf1yhsqQTKRjpSTUwvVl4Y-Q&s");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .image-placeholder-simple4 {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl5BSwEeKCPBhXEV_oPQr1Cw2CoZR5IUDcuw&s");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.label-text {
+    font-size: 10px;
+}
+
+.value-text {
+    font-size: 12px;
+}
+
+.badge-text {
+    font-size: 12px;
+}
+
+.heading {
+    font-size: 9px;
+}
+
+.bg-warning-soft {
+    background-color: #fcf0c0 !important;
+}
+
+.bg-danger-soft {
+    background-color: #fce8e8 !important;
+}
+
+.search-input-wrapper {
+    position: relative;
+
+    .search-icon {
+        position: absolute;
+        left: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .search-input {
+        font-size: 12px;
+        width: 250px;
+        padding-left: 40px !important;
+    }
+}
+
+.table-header {
+    font-size: 12px;
+
+    th {
+        background-color: #f8f9fc !important;
+    }
+}
+
+
+.table-body {
+    font-size: 13px;
+    white-space: nowrap;
+
+    .row-image {
+        width: 60px;
+        height: 40px;
+        background-image: url("https://cdn.prod.website-files.com/62b1b17308b0d74291186304/672f4fbfb3638bf1cc97ce0f_672f498462cbddaad472142e_double%2520room%2520hote%2527.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.review-item {
+    .review-title {
+        font-size: 14px;
+    }
+
+    .review-date {
+        font-size: 11px;
+    }
+
+    .review-text {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width:800) {
+    .booking-table {
+        h5 {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width:720) {
+    .search-input-wrapper {
+        justify-content: space-between;
+
+        .search-input {
+            font-size: 13px;
+            width: 200px;
+            padding-left: 40px !important;
+            margin-inline-end: 50px;
+
+        }
+
+        .dropdown-btn {
+            font-size: 12px;
+        }
+    }
+
+}
+
+@media (max-width:645) {
+    .booking-table {
+        h5 {
+            font-size: 16px;
+        }
+
+        .search-input {
+            margin-inline-end: 30px;
+
+        }
+    }
+}
+
+@media (max-width:582) {
+    .booking-table {
+        h5 {
+            display: none;
+        }
+
+        .search-input {
+            margin-inline-end: 120px;
+
+        }
+    }
+}
+
+@media (max-width:530px) {
+    .search-input-wrapper {
+        justify-content: space-between;
+
+        .search-input {
+            font-size: 12px;
+            width: 150px;
+            padding-left: 40px !important;
+            margin-inline-end: 50px;
+
+        }
+
+        .dropdown-btn {
+            font-size: 10px;
+        }
+    }
+
+}
+
+@media (max-width:472px) {
+    .booking-table {
+        .search-input {
+            margin-inline-end: 10px;
+
+        }
+    }
+}
